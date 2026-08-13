@@ -1,4 +1,4 @@
-// This program checks whether a string is a palindrome ignoring spaces and case
+// Program to check if a string is palindrome ignoring spaces and case
 
 #include <stdio.h>
 #include <ctype.h>
@@ -11,9 +11,9 @@ int main() {
     printf("Enter a string: ");
     gets(str);
 
-    // remove spaces and convert to lowercase
     while(str[i] != '\0') {
         if(str[i] != ' ') {
+            // tolower() converts uppercase letters to lowercase
             clean[j] = tolower(str[i]);
             j++;
         }
